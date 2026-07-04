@@ -8,10 +8,12 @@ import StoreList from "./components/StoreList.jsx";
 import SocialSection from "./components/SocialSection.jsx";
 import Footer from "./components/Footer.jsx";
 import MobileStickyCTA from "./components/MobileStickyCTA.jsx";
+import ScrollEffects from "./components/ScrollEffects.jsx";
 
 export default function App() {
   return (
     <>
+      <ScrollEffects />
       <Header />
       <main id="main">
         <Hero />
