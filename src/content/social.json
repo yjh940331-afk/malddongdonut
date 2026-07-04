@@ -1,0 +1,36 @@
+{
+  "instagram": "https://www.instagram.com/malddongdonut_official",
+  "youtube": "https://youtube.com/channel/UCaxdFjr8sOlJAUi9IsLqt-Q",
+  "title": "Follow the Sweet Moments",
+  "description": "인스타그램과 유튜브에서 말똥도넛의 새로운 메뉴, 공간, 달콤한 순간을 만나보세요.",
+  "items": [
+    {
+      "title": "New Menu",
+      "description": "새로운 달콤함을 가장 먼저 만나보세요.",
+      "image": "https://assets.example.com/malddong/social/social-01.webp",
+      "alt": "말똥도넛 신메뉴 이미지",
+      "url": "https://www.instagram.com/malddongdonut_official"
+    },
+    {
+      "title": "Photo Spot",
+      "description": "말똥도넛에서 남기는 핑크빛 순간.",
+      "image": "https://assets.example.com/malddong/social/social-02.webp",
+      "alt": "말똥도넛 포토존 이미지",
+      "url": "https://www.instagram.com/malddongdonut_official"
+    },
+    {
+      "title": "Sweet Moment",
+      "description": "도넛과 젤라또로 완성하는 달콤한 하루.",
+      "image": "https://assets.example.com/malddong/social/social-03.webp",
+      "alt": "말똥도넛 디저트 이미지",
+      "url": "https://www.instagram.com/malddongdonut_official"
+    },
+    {
+      "title": "Dessert Town",
+      "description": "컬러풀한 공간과 포토존을 더 가까이 만나보세요.",
+      "image": "https://assets.example.com/malddong/social/social-04.webp",
+      "alt": "말똥도넛 디저트타운 이미지",
+      "url": "https://www.instagram.com/malddongdonut_official"
+    }
+  ]
+}

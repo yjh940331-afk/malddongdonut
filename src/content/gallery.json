@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Pink Entrance",
+    "caption": "입구부터 시작되는 핑크빛 디저트타운 무드",
+    "image": "https://assets.example.com/malddong/gallery/entrance.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/entrance.webp",
+    "alt": "말똥도넛 핑크 입구"
+  },
+  {
+    "title": "Donut Showcase",
+    "caption": "고르는 순간부터 즐거운 도넛 쇼케이스",
+    "image": "https://assets.example.com/malddong/gallery/showcase.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/showcase.webp",
+    "alt": "말똥도넛 도넛 쇼케이스"
+  },
+  {
+    "title": "Gelato Mood",
+    "caption": "비비드한 젤라또 컬러가 만드는 달콤한 무드",
+    "image": "https://assets.example.com/malddong/gallery/gelato.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/gelato.webp",
+    "alt": "말똥도넛 젤라또 공간"
+  },
+  {
+    "title": "Neon Spot",
+    "caption": "사진 찍기 좋은 네온 포토존",
+    "image": "https://assets.example.com/malddong/gallery/neon.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/neon.webp",
+    "alt": "말똥도넛 네온 포토존"
+  },
+  {
+    "title": "Stair Photo Zone",
+    "caption": "파주 나들이 인증샷을 남기기 좋은 계단 포토존",
+    "image": "https://assets.example.com/malddong/gallery/stair.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/stair.webp",
+    "alt": "말똥도넛 계단 포토존"
+  },
+  {
+    "title": "Dessert Town",
+    "caption": "도넛, 젤라또, 음료가 함께 있는 달콤한 공간",
+    "image": "https://assets.example.com/malddong/gallery/interior.webp",
+    "thumb": "https://assets.example.com/malddong/gallery/thumbs/interior.webp",
+    "alt": "말똥도넛 실내 공간"
+  }
+]

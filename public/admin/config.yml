@@ -1,0 +1,182 @@
+# Sveltia CMS scaffold for MALDDONG DONUT.
+# TODO: 실제 GitHub 저장소, branch, OAuth/Auth Worker 값을 운영 환경에 맞게 채우세요.
+backend:
+  name: github
+  repo: TODO_OWNER/TODO_REPOSITORY
+  branch: main
+  base_url: TODO_AUTH_WORKER_URL
+
+locale: "ko"
+publish_mode: simple
+site_url: TODO_SITE_URL
+display_url: TODO_SITE_URL
+
+# TODO: Cloudflare R2 연동 시 media_libraries.cloudflare_r2 설정을 추가하세요.
+# 민감한 Secret Access Key는 이 파일이나 클라이언트 코드에 넣지 않습니다.
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "brand"
+    label: "브랜드"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "brand"
+        label: "브랜드 기본 정보"
+        file: "src/content/brand.json"
+        fields:
+          - { label: "브랜드명", name: "name", widget: "string" }
+          - { label: "영문명", name: "englishName", widget: "string" }
+          - { label: "태그라인", name: "tagline", widget: "string" }
+          - { label: "설명", name: "description", widget: "text" }
+          - label: "키워드"
+            name: "keywords"
+            widget: "list"
+            field: { label: "키워드", name: "keyword", widget: "string" }
+          - label: "링크"
+            name: "links"
+            widget: "object"
+            fields:
+              - { label: "네이버지도", name: "map", widget: "string" }
+              - { label: "인스타그램", name: "instagram", widget: "string" }
+              - { label: "유튜브", name: "youtube", widget: "string" }
+              - { label: "블로그", name: "blog", widget: "string", required: false }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "작은 라벨", name: "eyebrow", widget: "string" }
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+              - { label: "데스크톱 이미지 URL", name: "imageDesktop", widget: "string" }
+              - { label: "모바일 이미지 URL", name: "imageMobile", widget: "string" }
+              - { label: "이미지 대체 텍스트", name: "imageAlt", widget: "string" }
+          - label: "빠른 정보"
+            name: "quickInfo"
+            widget: "list"
+            fields:
+              - { label: "라벨", name: "label", widget: "string" }
+              - { label: "값", name: "value", widget: "string" }
+          - label: "브랜드 콘셉트"
+            name: "concept"
+            widget: "object"
+            fields:
+              - { label: "작은 라벨", name: "eyebrow", widget: "string" }
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+              - label: "카드"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "제목", name: "title", widget: "string" }
+                  - { label: "설명", name: "description", widget: "text" }
+
+  - name: "menus"
+    label: "메뉴 카테고리"
+    editor:
+      preview: false
+    files:
+      - name: "menus"
+        label: "대표 디저트"
+        file: "src/content/menus.json"
+        fields:
+          - label: "메뉴"
+            name: "menus"
+            widget: "list"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "대체 텍스트", name: "alt", widget: "string" }
+              - { label: "포인트 라벨", name: "accent", widget: "string", required: false }
+
+  - name: "gallery"
+    label: "갤러리"
+    editor:
+      preview: false
+    files:
+      - name: "gallery"
+        label: "공간/포토존"
+        file: "src/content/gallery.json"
+        fields:
+          - label: "갤러리 항목"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "캡션", name: "caption", widget: "string" }
+              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "썸네일 URL", name: "thumb", widget: "string", required: false }
+              - { label: "대체 텍스트", name: "alt", widget: "string" }
+
+  - name: "stores"
+    label: "지점"
+    editor:
+      preview: false
+    files:
+      - name: "stores"
+        label: "지점 목록"
+        file: "src/content/stores.json"
+        fields:
+          - label: "지점"
+            name: "stores"
+            widget: "list"
+            fields:
+              - { label: "지점명", name: "name", widget: "string" }
+              - { label: "짧은 이름", name: "shortName", widget: "string" }
+              - { label: "주소", name: "address", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+              - label: "태그"
+                name: "tags"
+                widget: "list"
+                field: { label: "태그", name: "tag", widget: "string" }
+              - { label: "지도 URL", name: "mapUrl", widget: "string" }
+              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "대체 텍스트", name: "alt", widget: "string" }
+              - { label: "상태", name: "status", widget: "select", options: ["open", "coming-soon"] }
+              - { label: "대표 매장", name: "isFeatured", widget: "boolean", default: false }
+              - { label: "운영시간 안내", name: "hoursNotice", widget: "string" }
+
+  - name: "social"
+    label: "SNS"
+    editor:
+      preview: false
+    files:
+      - name: "social"
+        label: "소셜 섹션"
+        file: "src/content/social.json"
+        fields:
+          - { label: "인스타그램 URL", name: "instagram", widget: "string" }
+          - { label: "유튜브 URL", name: "youtube", widget: "string" }
+          - { label: "제목", name: "title", widget: "string" }
+          - { label: "설명", name: "description", widget: "text" }
+          - label: "소셜 카드"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "string" }
+              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "대체 텍스트", name: "alt", widget: "string" }
+              - { label: "연결 URL", name: "url", widget: "string" }
+
+  - name: "notices"
+    label: "공지"
+    editor:
+      preview: false
+    files:
+      - name: "notices"
+        label: "공지 문구"
+        file: "src/content/notices.json"
+        fields:
+          - label: "공지"
+            name: "notices"
+            widget: "list"
+            fields:
+              - { label: "사용 여부", name: "enabled", widget: "boolean", default: true }
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+              - { label: "링크 라벨", name: "linkLabel", widget: "string", required: false }
+              - { label: "링크 URL", name: "linkUrl", widget: "string", required: false }

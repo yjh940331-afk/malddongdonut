@@ -1,0 +1,15 @@
+[
+  {
+    "name": "말똥도넛 디저트타운 파주점",
+    "shortName": "파주점",
+    "address": "경기 파주시 지목로 137 말똥도넛",
+    "description": "파주 나들이 코스에 어울리는 핑크빛 디저트타운.",
+    "tags": ["디저트타운", "포토존", "주차 가능", "파주 나들이"],
+    "mapUrl": "https://naver.me/xQJRk4Ah",
+    "image": "https://assets.example.com/malddong/stores/paju/main.webp",
+    "alt": "말똥도넛 디저트타운 파주점",
+    "status": "open",
+    "isFeatured": true,
+    "hoursNotice": "운영시간은 네이버지도에서 최신 정보를 확인해주세요."
+  }
+]
