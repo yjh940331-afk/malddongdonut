@@ -1,36 +1,56 @@
 {
   "instagram": "https://www.instagram.com/malddongdonut_official",
   "youtube": "https://youtube.com/channel/UCaxdFjr8sOlJAUi9IsLqt-Q",
-  "title": "Follow the Sweet Moments",
-  "description": "인스타그램과 유튜브에서 말똥도넛의 새로운 메뉴, 공간, 달콤한 순간을 만나보세요.",
+  "title": "Sweet Social Mix",
+  "description": "공식 채널의 사진, 릴스, 쇼츠를 한 화면에 가볍게 담았습니다.",
+  "instagramProfile": {
+    "handle": "@malddongdonut_official",
+    "followers": "17K",
+    "posts": "511",
+    "bio": "국내 최대 디저트 타운, 말똥도넛. It's Malddong Time!",
+    "hours": "매일 10:00-21:00 · L.O 20:30"
+  },
   "items": [
     {
-      "title": "New Menu",
-      "description": "새로운 달콤함을 가장 먼저 만나보세요.",
-      "image": "https://assets.example.com/malddong/social/social-01.webp",
-      "alt": "말똥도넛 신메뉴 이미지",
-      "url": "https://www.instagram.com/malddongdonut_official"
-    },
-    {
       "title": "Photo Spot",
-      "description": "말똥도넛에서 남기는 핑크빛 순간.",
-      "image": "https://assets.example.com/malddong/social/social-02.webp",
-      "alt": "말똥도넛 포토존 이미지",
+      "description": "입구와 네온, 외관을 작게 모아 보는 인스타 무드.",
+      "image": "/images/malddong/gallery/official-03.jpg",
+      "alt": "말똥도넛 입구 포토 스팟",
       "url": "https://www.instagram.com/malddongdonut_official"
     },
     {
-      "title": "Sweet Moment",
-      "description": "도넛과 젤라또로 완성하는 달콤한 하루.",
-      "image": "https://assets.example.com/malddong/social/social-03.webp",
-      "alt": "말똥도넛 디저트 이미지",
+      "title": "Dessert Mood",
+      "description": "케이크 쇼케이스와 핑크빛 실내를 가볍게 연결.",
+      "image": "/images/malddong/gallery/official-08.jpg",
+      "alt": "말똥도넛 케이크 쇼케이스",
       "url": "https://www.instagram.com/malddongdonut_official"
     },
     {
-      "title": "Dessert Town",
-      "description": "컬러풀한 공간과 포토존을 더 가까이 만나보세요.",
-      "image": "https://assets.example.com/malddong/social/social-04.webp",
-      "alt": "말똥도넛 디저트타운 이미지",
+      "title": "Neon Night",
+      "description": "야간 네온 컷은 작은 카드에서 더 선명하게.",
+      "image": "/images/malddong/gallery/official-07.jpg",
+      "alt": "말똥도넛 야간 네온",
       "url": "https://www.instagram.com/malddongdonut_official"
+    }
+  ],
+  "youtubeVideos": [
+    {
+      "title": "파주핫플 말똥도넛",
+      "meta": "Shorts · 143만",
+      "thumbnail": "https://i2.ytimg.com/vi/ARGEXEaZX94/hqdefault.jpg",
+      "url": "https://www.youtube.com/shorts/ARGEXEaZX94"
+    },
+    {
+      "title": "진짜 파주핫플로 오세요",
+      "meta": "Shorts · 5.5만",
+      "thumbnail": "https://i3.ytimg.com/vi/rLBr4N2zdLg/hqdefault.jpg",
+      "url": "https://www.youtube.com/shorts/rLBr4N2zdLg"
+    },
+    {
+      "title": "국내 최대 디저트타운",
+      "meta": "Video · 3.1만",
+      "thumbnail": "https://i3.ytimg.com/vi/vpgp5FimuyU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=vpgp5FimuyU"
     }
   ]
 }

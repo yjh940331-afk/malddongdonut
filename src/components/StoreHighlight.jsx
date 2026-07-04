@@ -20,8 +20,8 @@ export default function StoreHighlight() {
           <p className="section-eyebrow">Visit Malddong Donut Paju</p>
           <h2 id="featured-store-title">{featuredStore.name}</h2>
           <p>
-            파주 나들이 코스에 어울리는 핑크빛 디저트타운. 도넛, 젤라또, 케이크,
-            음료 그리고 포토존까지 한 번에 즐길 수 있는 말똥도넛 대표 매장입니다.
+            파주 나들이 코스와 잘 어울리는 컬러풀한 디저트 타운입니다. 도넛, 젤라또, 케이크,
+            음료와 포토 스팟을 한 번에 즐길 수 있습니다.
           </p>
 
           <dl className="store-facts">
@@ -40,9 +40,9 @@ export default function StoreHighlight() {
           </dl>
 
           <div className="store-highlight__actions">
-            <Button href={featuredStore.mapUrl}>네이버지도 열기</Button>
+            <Button href={featuredStore.mapUrl}>위치</Button>
             <Button href={brand.links.instagram} variant="secondary">
-              인스타그램 보기
+              IG
             </Button>
           </div>
         </div>

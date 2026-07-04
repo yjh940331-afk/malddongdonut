@@ -1,44 +1,44 @@
 [
   {
+    "title": "Dessert Town Facade",
+    "caption": "멀리서도 눈에 들어오는 민트 컬러 외관과 대형 사인.",
+    "image": "/images/malddong/gallery/official-02.jpg",
+    "thumb": "/images/malddong/gallery/official-02.jpg",
+    "alt": "말똥도넛 파주점 민트색 외관"
+  },
+  {
     "title": "Pink Entrance",
-    "caption": "입구부터 시작되는 핑크빛 디저트타운 무드",
-    "image": "https://assets.example.com/malddong/gallery/entrance.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/entrance.webp",
-    "alt": "말똥도넛 핑크 입구"
+    "caption": "아이스크림 오브제와 네온 사인이 맞이하는 입구.",
+    "image": "/images/malddong/gallery/official-03.jpg",
+    "thumb": "/images/malddong/gallery/official-03.jpg",
+    "alt": "말똥도넛 입구와 대형 아이스크림 오브제"
   },
   {
-    "title": "Donut Showcase",
-    "caption": "고르는 순간부터 즐거운 도넛 쇼케이스",
-    "image": "https://assets.example.com/malddong/gallery/showcase.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/showcase.webp",
-    "alt": "말똥도넛 도넛 쇼케이스"
+    "title": "Interior Scene",
+    "caption": "핑크와 민트, 체크 패턴이 이어지는 활기 있는 실내.",
+    "image": "/images/malddong/gallery/official-06.jpg",
+    "thumb": "/images/malddong/gallery/official-06.jpg",
+    "alt": "말똥도넛 실내 전경"
   },
   {
-    "title": "Gelato Mood",
-    "caption": "비비드한 젤라또 컬러가 만드는 달콤한 무드",
-    "image": "https://assets.example.com/malddong/gallery/gelato.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/gelato.webp",
-    "alt": "말똥도넛 젤라또 공간"
+    "title": "Neon Night",
+    "caption": "밤에는 더 선명하게 살아나는 말똥도넛의 네온 무드.",
+    "image": "/images/malddong/gallery/official-07.jpg",
+    "thumb": "/images/malddong/gallery/official-07.jpg",
+    "alt": "말똥도넛 야간 네온 외관"
   },
   {
-    "title": "Neon Spot",
-    "caption": "사진 찍기 좋은 네온 포토존",
-    "image": "https://assets.example.com/malddong/gallery/neon.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/neon.webp",
-    "alt": "말똥도넛 네온 포토존"
+    "title": "Cake Showcase",
+    "caption": "케이크와 디저트를 고르는 쇼케이스 앞의 달콤한 장면.",
+    "image": "/images/malddong/gallery/official-08.jpg",
+    "thumb": "/images/malddong/gallery/official-08.jpg",
+    "alt": "말똥도넛 케이크 쇼케이스"
   },
   {
-    "title": "Stair Photo Zone",
-    "caption": "파주 나들이 인증샷을 남기기 좋은 계단 포토존",
-    "image": "https://assets.example.com/malddong/gallery/stair.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/stair.webp",
-    "alt": "말똥도넛 계단 포토존"
-  },
-  {
-    "title": "Dessert Town",
-    "caption": "도넛, 젤라또, 음료가 함께 있는 달콤한 공간",
-    "image": "https://assets.example.com/malddong/gallery/interior.webp",
-    "thumb": "https://assets.example.com/malddong/gallery/thumbs/interior.webp",
-    "alt": "말똥도넛 실내 공간"
+    "title": "Color Signage",
+    "caption": "브랜드 컬러와 사이니지가 크게 드러나는 포토 스팟.",
+    "image": "/images/malddong/gallery/official-05.jpg",
+    "thumb": "/images/malddong/gallery/official-05.jpg",
+    "alt": "말똥도넛 건물 사이니지"
   }
 ]

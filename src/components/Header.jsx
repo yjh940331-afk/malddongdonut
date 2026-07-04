@@ -36,7 +36,7 @@ export default function Header() {
 
         <div className="site-header__actions">
           <Button href={brand.links.map} variant="secondary" aria-label="네이버지도에서 말똥도넛 위치 보기">
-            지도 보기
+            위치
           </Button>
           <button
             className="menu-toggle"
@@ -46,8 +46,8 @@ export default function Header() {
             aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
             onClick={() => setOpen((current) => !current)}
           >
-            <span />
-            <span />
+            <span className="menu-toggle__ring" aria-hidden="true" />
+            <span className="menu-toggle__dot" aria-hidden="true" />
           </button>
         </div>
       </div>

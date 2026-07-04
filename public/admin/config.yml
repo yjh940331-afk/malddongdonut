@@ -2,19 +2,28 @@
 # TODO: 실제 GitHub 저장소, branch, OAuth/Auth Worker 값을 운영 환경에 맞게 채우세요.
 backend:
   name: github
-  repo: TODO_OWNER/TODO_REPOSITORY
+  repo: yjh940331-afk/malddongdonut
   branch: main
-  base_url: TODO_AUTH_WORKER_URL
+  base_url: https://sveltia-cms-auth.yjh940331.workers.dev
 
 locale: "ko"
 publish_mode: simple
-site_url: TODO_SITE_URL
-display_url: TODO_SITE_URL
+site_url: https://malddongdonut.com
+display_url: https://malddongdonut.com
 
-# TODO: Cloudflare R2 연동 시 media_libraries.cloudflare_r2 설정을 추가하세요.
-# 민감한 Secret Access Key는 이 파일이나 클라이언트 코드에 넣지 않습니다.
+# 기본(git) 미디어 폴더 — R2 미설정 필드용 폴백
 media_folder: "public/uploads"
 public_folder: "/uploads"
+
+# Cloudflare R2 미디어 라이브러리 — /admin 에서 업로드한 이미지는 R2 버킷에 저장되고
+# https://media.malddongdonut.com/<파일명> 형태의 공개 URL이 콘텐츠 JSON에 기록됨.
+# ⚠️ Secret Access Key는 절대 여기 넣지 않음 (최초 업로드 시 브라우저에서 1회 입력 → localStorage 보관).
+media_libraries:
+  cloudflare_r2:
+    access_key_id: fe5dea14d13b8ce61e12d0e34fb66efc
+    bucket: malddongdonut-images
+    account_id: b8c01aa804c1c42982b17864b74e975b
+    public_url: https://media.malddongdonut.com
 
 collections:
   - name: "brand"
@@ -50,8 +59,8 @@ collections:
               - { label: "작은 라벨", name: "eyebrow", widget: "string" }
               - { label: "제목", name: "title", widget: "string" }
               - { label: "설명", name: "description", widget: "text" }
-              - { label: "데스크톱 이미지 URL", name: "imageDesktop", widget: "string" }
-              - { label: "모바일 이미지 URL", name: "imageMobile", widget: "string" }
+              - { label: "데스크톱 이미지", name: "imageDesktop", widget: "image" }
+              - { label: "모바일 이미지", name: "imageMobile", widget: "image" }
               - { label: "이미지 대체 텍스트", name: "imageAlt", widget: "string" }
           - label: "빠른 정보"
             name: "quickInfo"
@@ -88,7 +97,7 @@ collections:
             fields:
               - { label: "제목", name: "title", widget: "string" }
               - { label: "설명", name: "description", widget: "text" }
-              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "이미지", name: "image", widget: "image" }
               - { label: "대체 텍스트", name: "alt", widget: "string" }
               - { label: "포인트 라벨", name: "accent", widget: "string", required: false }
 
@@ -107,8 +116,8 @@ collections:
             fields:
               - { label: "제목", name: "title", widget: "string" }
               - { label: "캡션", name: "caption", widget: "string" }
-              - { label: "이미지 URL", name: "image", widget: "string" }
-              - { label: "썸네일 URL", name: "thumb", widget: "string", required: false }
+              - { label: "이미지", name: "image", widget: "image" }
+              - { label: "썸네일", name: "thumb", widget: "image", required: false }
               - { label: "대체 텍스트", name: "alt", widget: "string" }
 
   - name: "stores"
@@ -133,7 +142,7 @@ collections:
                 widget: "list"
                 field: { label: "태그", name: "tag", widget: "string" }
               - { label: "지도 URL", name: "mapUrl", widget: "string" }
-              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "이미지", name: "image", widget: "image" }
               - { label: "대체 텍스트", name: "alt", widget: "string" }
               - { label: "상태", name: "status", widget: "select", options: ["open", "coming-soon"] }
               - { label: "대표 매장", name: "isFeatured", widget: "boolean", default: false }
@@ -158,7 +167,7 @@ collections:
             fields:
               - { label: "제목", name: "title", widget: "string" }
               - { label: "설명", name: "description", widget: "string" }
-              - { label: "이미지 URL", name: "image", widget: "string" }
+              - { label: "이미지", name: "image", widget: "image" }
               - { label: "대체 텍스트", name: "alt", widget: "string" }
               - { label: "연결 URL", name: "url", widget: "string" }
 

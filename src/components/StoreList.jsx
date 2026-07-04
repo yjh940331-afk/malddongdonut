@@ -10,7 +10,7 @@ export default function StoreList() {
         <SectionTitle
           eyebrow="Stores"
           title="Stores"
-          description="말똥도넛을 만날 수 있는 공간"
+          description="말똥도넛을 직접 만날 수 있는 공간"
           align="center"
         />
 
@@ -33,9 +33,9 @@ export default function StoreList() {
                     <li key={tag}>{tag}</li>
                   ))}
                 </ul>
-                <span className="store-card__notice">운영시간은 지도에서 최신 정보 확인</span>
+                <span className="store-card__notice">{store.hoursNotice}</span>
                 <Button href={store.mapUrl} variant="ghost" aria-label={`${store.name} 네이버지도 열기`}>
-                  지도에서 위치 확인하기
+                  위치
                 </Button>
               </div>
             </article>

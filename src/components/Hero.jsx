@@ -20,9 +20,9 @@ export default function Hero() {
           <p className="hero-copy__description">{brand.hero.description}</p>
 
           <div className="hero-copy__actions" aria-label="주요 링크">
-            <Button href={brand.links.map}>매장 위치 보기</Button>
+            <Button href={brand.links.map}>위치</Button>
             <Button href={brand.links.instagram} variant="ghost">
-              인스타그램 보기
+              IG
             </Button>
           </div>
 
@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="hero-collage" aria-label={brand.hero.imageAlt}>
           <div className="hero-collage__card hero-collage__card--main">
             <R2Image src={brand.hero.imageDesktop} mobileSrc={brand.hero.imageMobile} alt={brand.hero.imageAlt} />
-            <span>Pink Dessert Town</span>
+            <span>Dessert Town</span>
           </div>
           <div className="hero-collage__note hero-collage__note--one">DONUT</div>
           <div className="hero-collage__note hero-collage__note--two">PHOTO</div>

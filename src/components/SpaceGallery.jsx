@@ -9,7 +9,7 @@ export default function SpaceGallery() {
         <SectionTitle
           eyebrow="Space / Photo Spot"
           title="A Sweet Playground"
-          description="먹는 공간을 넘어, 사진 찍고 머무는 디저트 플레이스"
+          description="먹는 공간을 넘어, 사진으로 남기고 싶은 장면이 이어지는 디저트 타운."
         />
 
         <div className="gallery-rail" aria-label="말똥도넛 공간 갤러리">

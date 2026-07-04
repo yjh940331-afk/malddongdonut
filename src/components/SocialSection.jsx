@@ -10,32 +10,69 @@ export default function SocialSection() {
         <div className="social-section__head">
           <SectionTitle eyebrow="Social" title={social.title} description={social.description} />
           <div className="social-section__actions">
-            <Button href={social.instagram}>Instagram</Button>
+            <Button href={social.instagram}>IG</Button>
             <Button href={social.youtube} variant="secondary">
               YouTube
             </Button>
           </div>
         </div>
 
-        <div className="social-grid">
-          {social.items.map((item) => (
-            <a
-              className="social-card"
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={item.title}
-              aria-label={`${item.title} 인스타그램에서 보기`}
-            >
-              <div className="social-card__media">
+        <div className="social-mix">
+          <a
+            className="social-profile-card"
+            href={social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="말똥도넛 공식 인스타그램 보기"
+          >
+            <span className="social-profile-card__avatar" aria-hidden="true">
+              IG
+            </span>
+            <div>
+              <p>Instagram</p>
+              <h3>{social.instagramProfile.handle}</h3>
+              <span>{social.instagramProfile.bio}</span>
+              <ul>
+                <li>{social.instagramProfile.followers} followers</li>
+                <li>{social.instagramProfile.posts} posts</li>
+                <li>{social.instagramProfile.hours}</li>
+              </ul>
+            </div>
+          </a>
+
+          <div className="social-mini-grid" aria-label="인스타그램 분위기 카드">
+            {social.items.map((item) => (
+              <a className="social-mini-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
                 <R2Image src={item.image} alt={item.alt} loading="lazy" />
-              </div>
-              <div className="social-card__copy">
-                <span>{item.title}</span>
-                <p>{item.description}</p>
-              </div>
-            </a>
-          ))}
+                <div>
+                  <span>{item.title}</span>
+                  <p>{item.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="youtube-strip" aria-label="말똥도넛 유튜브 영상">
+          <div className="youtube-strip__head">
+            <span>YouTube</span>
+            <p>쇼츠와 영상으로 보는 말똥도넛의 달콤한 장면.</p>
+          </div>
+
+          <div className="youtube-grid">
+            {social.youtubeVideos.map((video) => (
+              <a className="youtube-card" href={video.url} target="_blank" rel="noopener noreferrer" key={video.url}>
+                <div className="youtube-card__thumb">
+                  <R2Image src={video.thumbnail} alt="" loading="lazy" />
+                  <span aria-hidden="true">Play</span>
+                </div>
+                <div>
+                  <span>{video.meta}</span>
+                  <h3>{video.title}</h3>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

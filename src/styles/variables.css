@@ -1,21 +1,22 @@
 :root {
   --color-hot-pink: #ff4fa3;
-  --color-candy-pink: #ffb3d9;
-  --color-mint: #38d6d6;
-  --color-orange: #ff7a1a;
-  --color-cream: #fff3e6;
-  --color-cream-deep: #ffe2c3;
-  --color-chocolate: #3a1f1a;
-  --color-ink: #181014;
-  --color-muted: #7a555c;
+  --color-candy-pink: #ffd8ea;
+  --color-mint: #63d7cf;
+  --color-orange: #ff914d;
+  --color-cream: #fff6e9;
+  --color-cream-deep: #ffe5c8;
+  --color-chocolate: #6a382e;
+  --color-ink: #512936;
+  --color-muted: #946b72;
   --color-white: #ffffff;
-  --color-line: rgba(58, 31, 26, 0.14);
-  --font-sans: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
-  --font-display: "Arial Rounded MT Bold", "Trebuchet MS", var(--font-sans);
+  --color-line: rgba(106, 56, 46, 0.13);
+  --font-sans: "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  --font-display: "Bagel Fat One", "Jua", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  --font-round: "Jua", "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
   --max-width: 1180px;
   --radius-card: 8px;
   --radius-pill: 999px;
-  --shadow-soft: 0 18px 50px rgba(255, 79, 163, 0.15);
-  --shadow-strong: 0 24px 70px rgba(58, 31, 26, 0.18);
-  --header-height: 76px;
+  --shadow-soft: 0 12px 30px rgba(106, 56, 46, 0.08);
+  --shadow-strong: 0 20px 48px rgba(106, 56, 46, 0.13);
+  --header-height: 62px;
 }

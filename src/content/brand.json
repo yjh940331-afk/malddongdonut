@@ -1,9 +1,9 @@
 {
   "name": "말똥도넛",
   "englishName": "MALDDONG DONUT",
-  "tagline": "보기만 해도 기분 좋아지는 핑크빛 디저트타운",
-  "description": "도넛, 젤라또, 케이크, 음료 그리고 포토존까지. 말똥도넛에서 달콤한 하루를 만나보세요.",
-  "keywords": ["DONUT", "GELATO", "PHOTO SPOT", "DESSERT TOWN"],
+  "tagline": "파주의 컬러풀 디저트 타운",
+  "description": "도넛, 젤라또, 케이크와 포토 스팟을 한 공간에서 즐기는 파주의 디저트 타운입니다.",
+  "keywords": ["DONUT", "GELATO", "CAKE", "PHOTO SPOT"],
   "links": {
     "map": "https://naver.me/xQJRk4Ah",
     "instagram": "https://www.instagram.com/malddongdonut_official",
@@ -11,12 +11,12 @@
     "blog": "https://m.blog.naver.com/cicfnb1/223681245353"
   },
   "hero": {
-    "eyebrow": "MALDDONG DONUT",
-    "title": "보기만 해도 기분 좋아지는 핑크빛 디저트타운",
-    "description": "도넛, 젤라또, 케이크, 음료 그리고 포토존까지. 말똥도넛에서 달콤한 하루를 만나보세요.",
-    "imageDesktop": "https://assets.example.com/malddong/hero/hero-desktop.webp",
-    "imageMobile": "https://assets.example.com/malddong/hero/hero-mobile.webp",
-    "imageAlt": "말똥도넛의 핑크빛 디저트타운 공간"
+    "eyebrow": "MALDDONG DONUT & GELATO",
+    "title": "파주의 컬러풀 디저트 타운",
+    "description": "민트빛 외관, 핑크빛 실내, 케이크 쇼케이스와 포토 스팟까지. 먹고 머무는 시간이 하나의 장면이 되는 말똥도넛입니다.",
+    "imageDesktop": "/images/malddong/gallery/official-02.jpg",
+    "imageMobile": "/images/malddong/gallery/official-03.jpg",
+    "imageAlt": "말똥도넛 파주점 외관"
   },
   "quickInfo": [
     {
@@ -28,30 +28,30 @@
       "value": "도넛 · 젤라또 · 케이크 · 음료"
     },
     {
-      "label": "Space",
-      "value": "포토존"
+      "label": "Mood",
+      "value": "디저트 타운 · 포토 스팟"
     },
     {
       "label": "Hours",
-      "value": "운영시간은 네이버지도 확인"
+      "value": "10:00-21:00 · L.O 20:30"
     }
   ],
   "concept": {
     "eyebrow": "Brand Concept",
-    "title": "말똥도넛은 달콤한 디저트와 키치한 공간이 만나는 브랜드입니다.",
-    "description": "말똥도넛은 도넛을 중심으로 젤라또, 케이크, 음료, 굿즈와 포토존을 함께 즐길 수 있는 디저트 브랜드입니다. 비비드한 컬러와 장난스러운 공간감으로, 먹는 즐거움과 찍는 즐거움을 동시에 전합니다.",
+    "title": "달콤한 메뉴, 컬러풀한 공간.",
+    "description": "도넛·젤라또·케이크·음료, 그리고 사진 찍기 좋은 공간. 선명한 색감으로 기억되는 디저트 플레이스.",
     "cards": [
       {
-        "title": "Sweet Dessert",
-        "description": "도넛, 젤라또, 케이크, 음료까지 한 공간에서 만나는 달콤한 디저트 경험"
+        "title": "Dessert Lineup",
+        "description": "도넛·젤라또·케이크·음료 한자리에"
       },
       {
         "title": "Colorful Space",
-        "description": "핑크, 민트, 오렌지 컬러가 어우러진 키치한 디저트타운 무드"
+        "description": "민트 외관 × 핑크 실내, 경쾌한 무드"
       },
       {
         "title": "Photo Moment",
-        "description": "방문 자체가 콘텐츠가 되는 포토존과 SNS 감성의 공간"
+        "description": "입구·네온·쇼케이스, 어디든 인생샷"
       }
     ]
   }

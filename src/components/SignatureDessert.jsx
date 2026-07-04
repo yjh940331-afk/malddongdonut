@@ -9,7 +9,7 @@ export default function SignatureDessert() {
         <SectionTitle
           eyebrow="Signature"
           title="Signature Desserts"
-          description="고르는 순간부터 즐거운 말똥도넛의 달콤한 라인업"
+          description="도넛부터 젤라또, 케이크와 음료까지 한 공간에서 고르는 말똥도넛의 디저트 라인업."
           align="center"
         />
 
