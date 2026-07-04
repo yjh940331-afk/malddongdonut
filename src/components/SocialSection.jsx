@@ -10,8 +10,10 @@ export default function SocialSection() {
         <div className="social-section__head">
           <SectionTitle eyebrow="Social" title={social.title} description={social.description} />
           <div className="social-section__actions">
-            <Button href={social.instagram}>Instagram</Button>
-            <Button href={social.youtube} variant="secondary">
+            <Button href={social.instagram} className="button--social">
+              인스타
+            </Button>
+            <Button href={social.youtube} variant="secondary" className="button--social">
               YouTube
             </Button>
           </div>
@@ -45,9 +47,11 @@ export default function SocialSection() {
           </a>
 
           <div className="social-mini-grid" aria-label="인스타그램 분위기 카드">
-            {social.items.map((item) => (
-              <a className="social-mini-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
-                <R2Image src={item.image} alt={item.alt} loading="lazy" />
+            {social.items.map((item, index) => (
+              <a className={`social-mini-card social-mini-card--${index + 1}`} href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
+                <span className="social-mini-card__media">
+                  <R2Image src={item.image} alt={item.alt} loading="lazy" />
+                </span>
                 <div>
                   <span>{item.title}</span>
                   <p>{item.description}</p>
@@ -65,7 +69,13 @@ export default function SocialSection() {
 
           <div className="youtube-grid">
             {social.youtubeVideos.map((video) => (
-              <a className="youtube-card" href={video.url} target="_blank" rel="noopener noreferrer" key={video.url}>
+              <a
+                className={`youtube-card ${video.meta.startsWith("Shorts") ? "youtube-card--shorts" : "youtube-card--video"}`}
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={video.url}
+              >
                 <div className="youtube-card__thumb">
                   <R2Image src={video.thumbnail} alt="" loading="lazy" />
                   <span aria-hidden="true">Play</span>

@@ -4,10 +4,10 @@ import Button from "./Button.jsx";
 import ShareMenu from "./ShareMenu.jsx";
 
 const navItems = [
-  { label: "Menu", href: "#menu" },
-  { label: "Space", href: "#space" },
-  { label: "Stores", href: "#stores" },
-  { label: "Social", href: "#social" },
+  { label: "디저트", href: "#menu" },
+  { label: "공간", href: "#space" },
+  { label: "매장", href: "#stores" },
+  { label: "소셜", href: "#social" },
 ];
 
 export default function Header() {
@@ -36,8 +36,8 @@ export default function Header() {
 
         <div className="site-header__actions">
           <ShareMenu />
-          <Button href={brand.links.map} variant="mint" aria-label="네이버지도에서 말똥도넛 위치 보기">
-            네이버지도
+          <Button href={brand.links.map} variant="mint" className="button--header" aria-label="네이버지도에서 말똥도넛 위치 보기">
+            지도
           </Button>
           <button
             className="menu-toggle"
