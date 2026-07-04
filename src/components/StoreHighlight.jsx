@@ -40,9 +40,9 @@ export default function StoreHighlight() {
           </dl>
 
           <div className="store-highlight__actions">
-            <Button href={featuredStore.mapUrl}>위치</Button>
+            <Button href={featuredStore.mapUrl}>네이버지도</Button>
             <Button href={brand.links.instagram} variant="secondary">
-              IG
+              Instagram
             </Button>
           </div>
         </div>

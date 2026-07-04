@@ -36,7 +36,7 @@ export default function Header() {
 
         <div className="site-header__actions">
           <Button href={brand.links.map} variant="secondary" aria-label="네이버지도에서 말똥도넛 위치 보기">
-            위치
+            네이버지도
           </Button>
           <button
             className="menu-toggle"

@@ -18,11 +18,11 @@ export default function App() {
         <Hero />
         <QuickInfoBar />
         <BrandConcept />
+        <SocialSection />
         <SignatureDessert />
         <SpaceGallery />
         <StoreHighlight />
         <StoreList />
-        <SocialSection />
       </main>
       <Footer />
       <MobileStickyCTA />

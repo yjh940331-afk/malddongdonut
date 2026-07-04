@@ -10,7 +10,7 @@ export default function SocialSection() {
         <div className="social-section__head">
           <SectionTitle eyebrow="Social" title={social.title} description={social.description} />
           <div className="social-section__actions">
-            <Button href={social.instagram}>IG</Button>
+            <Button href={social.instagram}>Instagram</Button>
             <Button href={social.youtube} variant="secondary">
               YouTube
             </Button>
@@ -26,7 +26,11 @@ export default function SocialSection() {
             aria-label="말똥도넛 공식 인스타그램 보기"
           >
             <span className="social-profile-card__avatar" aria-hidden="true">
-              IG
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5.5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+              </svg>
             </span>
             <div>
               <p>Instagram</p>

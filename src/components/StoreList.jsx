@@ -35,7 +35,7 @@ export default function StoreList() {
                 </ul>
                 <span className="store-card__notice">{store.hoursNotice}</span>
                 <Button href={store.mapUrl} variant="ghost" aria-label={`${store.name} 네이버지도 열기`}>
-                  위치
+                  네이버지도
                 </Button>
               </div>
             </article>

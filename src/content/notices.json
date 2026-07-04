@@ -3,7 +3,7 @@
     "enabled": true,
     "title": "운영시간 안내",
     "description": "매일 10:00-21:00 운영, 라스트오더는 20:30입니다.",
-    "linkLabel": "위치",
+    "linkLabel": "네이버지도",
     "linkUrl": "https://naver.me/xQJRk4Ah"
   }
 ]
