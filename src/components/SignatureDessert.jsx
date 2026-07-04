@@ -1,4 +1,5 @@
 import menus from "../content/menus.json";
+import R2Image from "./R2Image.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 
 export default function SignatureDessert() {
@@ -16,14 +17,7 @@ export default function SignatureDessert() {
           {menus.map((menu) => (
             <article className="dessert-card" key={menu.title}>
               <div className="dessert-card__media">
-                <img
-                  src={menu.image}
-                  alt={menu.alt}
-                  loading="lazy"
-                  onError={(event) => {
-                    event.currentTarget.hidden = true;
-                  }}
-                />
+                <R2Image src={menu.image} alt={menu.alt} loading="lazy" />
                 <span>{menu.accent}</span>
               </div>
               <div className="dessert-card__copy">

@@ -1,5 +1,6 @@
 import social from "../content/social.json";
 import Button from "./Button.jsx";
+import R2Image from "./R2Image.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 
 export default function SocialSection() {
@@ -27,14 +28,7 @@ export default function SocialSection() {
               aria-label={`${item.title} 인스타그램에서 보기`}
             >
               <div className="social-card__media">
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  loading="lazy"
-                  onError={(event) => {
-                    event.currentTarget.hidden = true;
-                  }}
-                />
+                <R2Image src={item.image} alt={item.alt} loading="lazy" />
               </div>
               <div className="social-card__copy">
                 <span>{item.title}</span>

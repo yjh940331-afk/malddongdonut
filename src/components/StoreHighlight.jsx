@@ -1,6 +1,7 @@
 import brand from "../content/brand.json";
 import stores from "../content/stores.json";
 import Button from "./Button.jsx";
+import R2Image from "./R2Image.jsx";
 
 export default function StoreHighlight() {
   const featuredStore = stores.find((store) => store.isFeatured) || stores[0];
@@ -11,14 +12,7 @@ export default function StoreHighlight() {
     <section className="store-highlight page-section" aria-labelledby="featured-store-title">
       <div className="page-section__inner store-highlight__inner">
         <div className="store-highlight__media">
-          <img
-            src={featuredStore.image}
-            alt={featuredStore.alt}
-            loading="lazy"
-            onError={(event) => {
-              event.currentTarget.hidden = true;
-            }}
-          />
+          <R2Image src={featuredStore.image} alt={featuredStore.alt} loading="lazy" />
           <span>PAJU DESSERT TOWN</span>
         </div>
 

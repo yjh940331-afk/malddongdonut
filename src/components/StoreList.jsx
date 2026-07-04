@@ -1,6 +1,7 @@
 import stores from "../content/stores.json";
 import SectionTitle from "./SectionTitle.jsx";
 import Button from "./Button.jsx";
+import R2Image from "./R2Image.jsx";
 
 export default function StoreList() {
   return (
@@ -17,14 +18,7 @@ export default function StoreList() {
           {stores.map((store) => (
             <article className="store-card" key={store.name}>
               <div className="store-card__media">
-                <img
-                  src={store.image}
-                  alt={store.alt}
-                  loading="lazy"
-                  onError={(event) => {
-                    event.currentTarget.hidden = true;
-                  }}
-                />
+                <R2Image src={store.image} alt={store.alt} loading="lazy" />
                 <span className={`store-status store-status--${store.status}`}>
                   {store.status === "coming-soon" ? "준비 중" : "운영 중"}
                 </span>

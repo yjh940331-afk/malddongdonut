@@ -1,20 +1,12 @@
 import brand from "../content/brand.json";
 import Button from "./Button.jsx";
+import R2Image from "./R2Image.jsx";
 
 export default function Hero() {
   return (
     <section className="hero-section" id="top" aria-labelledby="hero-title">
       <div className="hero-section__media" aria-hidden="true">
-        <picture>
-          <source media="(max-width: 767px)" srcSet={brand.hero.imageMobile} />
-          <img
-            src={brand.hero.imageDesktop}
-            alt=""
-            onError={(event) => {
-              event.currentTarget.hidden = true;
-            }}
-          />
-        </picture>
+        <R2Image src={brand.hero.imageDesktop} mobileSrc={brand.hero.imageMobile} alt="" />
       </div>
 
       <div className="hero-section__decor hero-section__decor--donut" aria-hidden="true" />
@@ -43,16 +35,7 @@ export default function Hero() {
 
         <div className="hero-collage" aria-label={brand.hero.imageAlt}>
           <div className="hero-collage__card hero-collage__card--main">
-            <picture>
-              <source media="(max-width: 767px)" srcSet={brand.hero.imageMobile} />
-              <img
-                src={brand.hero.imageDesktop}
-                alt={brand.hero.imageAlt}
-                onError={(event) => {
-                  event.currentTarget.hidden = true;
-                }}
-              />
-            </picture>
+            <R2Image src={brand.hero.imageDesktop} mobileSrc={brand.hero.imageMobile} alt={brand.hero.imageAlt} />
             <span>Pink Dessert Town</span>
           </div>
           <div className="hero-collage__note hero-collage__note--one">DONUT</div>

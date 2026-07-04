@@ -1,4 +1,5 @@
 import gallery from "../content/gallery.json";
+import R2Image from "./R2Image.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 
 export default function SpaceGallery() {
@@ -15,14 +16,7 @@ export default function SpaceGallery() {
           {gallery.map((item) => (
             <article className="gallery-card" key={item.title}>
               <div className="gallery-card__media">
-                <img
-                  src={item.thumb || item.image}
-                  alt={item.alt}
-                  loading="lazy"
-                  onError={(event) => {
-                    event.currentTarget.hidden = true;
-                  }}
-                />
+                <R2Image src={item.thumb || item.image} alt={item.alt} loading="lazy" />
               </div>
               <div className="gallery-card__copy">
                 <h3>{item.title}</h3>
