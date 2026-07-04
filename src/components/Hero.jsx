@@ -20,9 +20,9 @@ export default function Hero() {
           <p className="hero-copy__description">{brand.hero.description}</p>
 
           <div className="hero-copy__actions" aria-label="주요 링크">
-            <Button href={brand.links.map}>네이버지도</Button>
-            <Button href={brand.links.instagram} variant="ghost">
-              Instagram
+            <Button href={brand.links.instagram}>Instagram</Button>
+            <Button href={brand.links.map} variant="mint">
+              네이버지도
             </Button>
           </div>
 

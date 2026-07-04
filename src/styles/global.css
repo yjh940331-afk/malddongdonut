@@ -180,6 +180,12 @@ address {
   backdrop-filter: blur(10px);
 }
 
+.button--mint {
+  background: var(--color-mint);
+  color: var(--color-chocolate);
+  box-shadow: 0 12px 26px rgba(99, 215, 207, 0.26);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -235,6 +241,90 @@ address {
   min-height: 34px;
   padding-inline: 14px;
   font-size: 0.88rem;
+}
+
+.share-menu {
+  position: relative;
+  display: inline-flex;
+}
+
+.share-menu__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 79, 163, 0.28);
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  color: var(--color-hot-pink);
+  font-family: var(--font-round);
+  font-size: 0.88rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.share-menu__trigger:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.share-menu__popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 70;
+  display: grid;
+  gap: 2px;
+  min-width: 152px;
+  padding: 6px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  background: var(--color-white);
+  box-shadow: var(--shadow-strong);
+}
+
+.share-menu__popover button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-ink);
+  font-family: var(--font-round);
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.share-menu__popover button:hover {
+  background: var(--color-candy-pink);
+  color: var(--color-hot-pink);
+}
+
+.share-menu__toast {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 71;
+  white-space: nowrap;
+  padding: 8px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--color-ink);
+  color: var(--color-white);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 479px) {
+  .share-menu__trigger span {
+    display: none;
+  }
+
+  .share-menu__trigger {
+    padding-inline: 9px;
+  }
 }
 
 .menu-toggle {

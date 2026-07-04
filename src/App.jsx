@@ -1,7 +1,6 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import QuickInfoBar from "./components/QuickInfoBar.jsx";
-import BrandConcept from "./components/BrandConcept.jsx";
 import SignatureDessert from "./components/SignatureDessert.jsx";
 import SpaceGallery from "./components/SpaceGallery.jsx";
 import StoreHighlight from "./components/StoreHighlight.jsx";
@@ -17,7 +16,6 @@ export default function App() {
       <main id="main">
         <Hero />
         <QuickInfoBar />
-        <BrandConcept />
         <SocialSection />
         <SignatureDessert />
         <SpaceGallery />

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import brand from "../content/brand.json";
 import Button from "./Button.jsx";
+import ShareMenu from "./ShareMenu.jsx";
 
 const navItems = [
-  { label: "Brand", href: "#brand" },
   { label: "Menu", href: "#menu" },
   { label: "Space", href: "#space" },
   { label: "Stores", href: "#stores" },
@@ -35,7 +35,8 @@ export default function Header() {
         </nav>
 
         <div className="site-header__actions">
-          <Button href={brand.links.map} variant="secondary" aria-label="네이버지도에서 말똥도넛 위치 보기">
+          <ShareMenu />
+          <Button href={brand.links.map} variant="mint" aria-label="네이버지도에서 말똥도넛 위치 보기">
             네이버지도
           </Button>
           <button

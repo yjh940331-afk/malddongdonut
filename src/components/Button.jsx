@@ -4,6 +4,7 @@ const variantClass = {
   primary: "button button--primary",
   secondary: "button button--secondary",
   ghost: "button button--ghost",
+  mint: "button button--mint",
 };
 
 export default function Button({
