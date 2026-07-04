@@ -6,7 +6,7 @@
     "description": "파주 나들이 코스와 잘 어울리는 컬러풀한 디저트 타운입니다.",
     "tags": ["디저트 타운", "포토 스팟", "주차 가능", "파주 나들이"],
     "mapUrl": "https://naver.me/xQJRk4Ah",
-    "image": "/images/malddong/gallery/official-02.jpg",
+    "image": "https://media.malddongdonut.com/gallery/official-02.webp",
     "alt": "말똥도넛 디저트타운 파주점 외관",
     "status": "open",
     "isFeatured": true,

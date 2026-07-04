@@ -14,21 +14,21 @@
     {
       "title": "Photo Spot",
       "description": "입구와 네온, 외관을 작게 모아 보는 인스타 무드.",
-      "image": "/images/malddong/gallery/official-03.jpg",
+      "image": "https://media.malddongdonut.com/gallery/official-03.webp",
       "alt": "말똥도넛 입구 포토 스팟",
       "url": "https://www.instagram.com/malddongdonut_official"
     },
     {
       "title": "Dessert Mood",
       "description": "케이크 쇼케이스와 핑크빛 실내를 가볍게 연결.",
-      "image": "/images/malddong/gallery/official-08.jpg",
+      "image": "https://media.malddongdonut.com/gallery/official-08.webp",
       "alt": "말똥도넛 케이크 쇼케이스",
       "url": "https://www.instagram.com/malddongdonut_official"
     },
     {
       "title": "Neon Night",
       "description": "야간 네온 컷은 작은 카드에서 더 선명하게.",
-      "image": "/images/malddong/gallery/official-07.jpg",
+      "image": "https://media.malddongdonut.com/gallery/official-07.webp",
       "alt": "말똥도넛 야간 네온",
       "url": "https://www.instagram.com/malddongdonut_official"
     }

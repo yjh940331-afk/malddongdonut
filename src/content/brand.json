@@ -14,8 +14,8 @@
     "eyebrow": "MALDDONG DONUT & GELATO",
     "title": "파주의 컬러풀 디저트 타운",
     "description": "민트빛 외관, 핑크빛 실내, 케이크 쇼케이스와 포토 스팟까지. 먹고 머무는 시간이 하나의 장면이 되는 말똥도넛입니다.",
-    "imageDesktop": "/images/malddong/gallery/official-02.jpg",
-    "imageMobile": "/images/malddong/gallery/official-03.jpg",
+    "imageDesktop": "https://media.malddongdonut.com/gallery/official-02.webp",
+    "imageMobile": "https://media.malddongdonut.com/gallery/official-03.webp",
     "imageAlt": "말똥도넛 파주점 외관"
   },
   "quickInfo": [
